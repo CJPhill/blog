@@ -1,0 +1,148 @@
+[debug] [2022-11-02T19:55:41.476Z] ----------------------------------------------------------------------
+[debug] [2022-11-02T19:55:41.479Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cliff\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-02T19:55:41.480Z] CLI Version:   11.15.0
+[debug] [2022-11-02T19:55:41.481Z] Platform:      win32
+[debug] [2022-11-02T19:55:41.481Z] Node Version:  v18.10.0
+[debug] [2022-11-02T19:55:41.482Z] Time:          Wed Nov 02 2022 12:55:41 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-11-02T19:55:41.483Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-02T19:55:41.496Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-02T19:55:41.498Z] > authorizing via signed-in user (cliffordskiing@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\cliff\blog
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-02T19:56:57.470Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-11-02T19:56:58.072Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-11-02T19:56:58.073Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project blog-daedf (Blog) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2022-11-02T19:57:04.536Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-11-02T19:57:04.536Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:04.965Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com 200
+[debug] [2022-11-02T19:57:04.965Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2022-11-02T19:57:04.967Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2022-11-02T19:57:04.967Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:05.693Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2022-11-02T19:57:05.693Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2022-11-02T19:57:15.709Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com [none]
+[debug] [2022-11-02T19:57:15.710Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:16.133Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com 200
+[debug] [2022-11-02T19:57:16.133Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2022-11-02T19:57:16.141Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/blog-daedf [none]
+[debug] [2022-11-02T19:57:16.333Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/blog-daedf 200
+[debug] [2022-11-02T19:57:16.334Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/blog-daedf {"projectId":"blog-daedf","projectNumber":"390036133821","displayName":"Blog","name":"projects/blog-daedf","resources":{"hostingSite":"blog-daedf","storageBucket":"blog-daedf.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_d246008a-634f-4987-902a-7679455aecd5"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[info] +  Default rules have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2022-11-02T19:57:30.190Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firestore.googleapis.com [none]
+[debug] [2022-11-02T19:57:30.191Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firestore.googleapis.com x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:30.661Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firestore.googleapis.com 200
+[debug] [2022-11-02T19:57:30.661Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/firestore.googleapis.com [omitted]
+[debug] [2022-11-02T19:57:30.661Z] >>> [apiv2][query] GET https://appengine.googleapis.com/v1/apps/blog-daedf [none]
+[debug] [2022-11-02T19:57:30.919Z] <<< [apiv2][status] GET https://appengine.googleapis.com/v1/apps/blog-daedf 200
+[debug] [2022-11-02T19:57:30.919Z] <<< [apiv2][body] GET https://appengine.googleapis.com/v1/apps/blog-daedf {"name":"apps/blog-daedf","id":"blog-daedf","authDomain":"gmail.com","locationId":"us-central","codeBucket":"staging.blog-daedf.appspot.com","servingStatus":"SERVING","defaultHostname":"blog-daedf.uc.r.appspot.com","defaultBucket":"blog-daedf.appspot.com","serviceAccount":"blog-daedf@appspot.gserviceaccount.com","gcrDomain":"us.gcr.io","databaseType":"CLOUD_FIRESTORE","featureSettings":{"splitHealthChecks":true,"useContainerOptimizedOs":true}}
+[debug] [2022-11-02T19:57:30.920Z] database_type: CLOUD_FIRESTORE
+[debug] [2022-11-02T19:57:30.920Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-02T19:57:30.921Z] > authorizing via signed-in user (cliffordskiing@gmail.com)
+[debug] [2022-11-02T19:57:30.921Z] [iam] checking project blog-daedf for permissions ["firebase.projects.get"]
+[debug] [2022-11-02T19:57:30.922Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions [none]
+[debug] [2022-11-02T19:57:30.922Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:30.922Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-02T19:57:31.152Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions 200
+[debug] [2022-11-02T19:57:31.152Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-11-02T19:57:38.282Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/blog-daedf/releases pageSize=10&pageToken=
+[debug] [2022-11-02T19:57:38.469Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/blog-daedf/releases 200
+[debug] [2022-11-02T19:57:38.469Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/blog-daedf/releases {"releases":[{"name":"projects/blog-daedf/releases/cloud.firestore","rulesetName":"projects/blog-daedf/rulesets/bb303f56-5fb8-4c7c-9d99-a71def0f7eec","createTime":"2022-10-31T19:40:42.615772Z","updateTime":"2022-11-02T19:47:35.706200Z"}]}
+[debug] [2022-11-02T19:57:38.470Z] Found ruleset: projects/blog-daedf/rulesets/bb303f56-5fb8-4c7c-9d99-a71def0f7eec
+[debug] [2022-11-02T19:57:38.470Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/blog-daedf/rulesets/bb303f56-5fb8-4c7c-9d99-a71def0f7eec [none]
+[debug] [2022-11-02T19:57:38.598Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/blog-daedf/rulesets/bb303f56-5fb8-4c7c-9d99-a71def0f7eec 200
+[debug] [2022-11-02T19:57:38.598Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/blog-daedf/rulesets/bb303f56-5fb8-4c7c-9d99-a71def0f7eec [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2022-11-02T19:57:41.735Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/blog-daedf/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2022-11-02T19:57:41.739Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/blog-daedf/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false [none]
+[debug] [2022-11-02T19:57:42.156Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/blog-daedf/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2022-11-02T19:57:42.156Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/blog-daedf/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2022-11-02T19:57:42.157Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/blog-daedf/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false 200
+[debug] [2022-11-02T19:57:42.157Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/blog-daedf/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false {"fields":[{"name":"projects/blog-daedf/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2022-11-02T19:57:42.161Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-02T19:57:42.161Z] > authorizing via signed-in user (cliffordskiing@gmail.com)
+[debug] [2022-11-02T19:57:42.161Z] [iam] checking project blog-daedf for permissions ["firebase.projects.get"]
+[debug] [2022-11-02T19:57:42.162Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions [none]
+[debug] [2022-11-02T19:57:42.162Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:42.162Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-02T19:57:42.392Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions 200
+[debug] [2022-11-02T19:57:42.392Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/blog-daedf:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-11-02T19:57:42.393Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-11-02T19:57:42.393Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:42.396Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/runtimeconfig.googleapis.com [none]
+[debug] [2022-11-02T19:57:42.396Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:42.796Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com 200
+[debug] [2022-11-02T19:57:42.797Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2022-11-02T19:57:42.797Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2022-11-02T19:57:42.797Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:42.802Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/runtimeconfig.googleapis.com 200
+[debug] [2022-11-02T19:57:42.802Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2022-11-02T19:57:43.526Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2022-11-02T19:57:43.526Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2022-11-02T19:57:53.543Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com [none]
+[debug] [2022-11-02T19:57:53.543Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/blog-daedf
+[debug] [2022-11-02T19:57:54.061Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com 200
+[debug] [2022-11-02T19:57:54.062Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/blog-daedf/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
