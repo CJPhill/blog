@@ -13,13 +13,23 @@ header {
   color: white;
   grid-column: 1 / span 2;
   padding: 10px 5px;
+  text-shadow: 2px 2px rgba(111, 145, 150, 1);
+  font-size: 140%;
 }
 
 form {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  height: 100vh;
+  background: rgb(68, 222, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(68, 222, 179, 1) 0%,
+    rgba(111, 145, 150, 1) 29%,
+    rgba(0, 212, 255, 1) 79%
+  );
 }
 
 form input,
@@ -35,12 +45,25 @@ article {
 }
 
 nav {
-  background-color: #dee9ff;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(216, 183, 140);
+  align-items: center;
 }
 
 nav p:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+article {
+  background: rgb(68, 222, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(68, 222, 179, 1) 0%,
+    rgba(111, 145, 150, 1) 29%,
+    rgba(0, 212, 255, 1) 79%
+  );
 }
 
 article .date {
@@ -55,4 +78,9 @@ article .body {
   background-color: red;
   color: gold;
   padding: 5px;
+}
+
+img {
+  width: 25%;
+  height: 100%;
 }

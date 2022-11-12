@@ -8,6 +8,7 @@ export default function Nav({ articles, setArticle }) {
               {a.title}
             </p>
           ))}
+      <button onClick={() => setArticle(null)}> Back </button>
     </nav>
   );
 }

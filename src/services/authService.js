@@ -13,6 +13,7 @@ export function SignIn() {
 export function SignOut() {
   return (
     <div>
+      <img src={auth.currentUser.photoURL} alt="UserImage"></img>
       Hello, {auth.currentUser.displayName} &nbsp;
       <button onClick={() => signOut(auth)}>Sign Out</button>
     </div>

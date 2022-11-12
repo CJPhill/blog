@@ -29,6 +29,9 @@ export default function ArticleEntry({ addArticle }) {
         ></textarea>
         <button type="submit">Create</button>
       </form>
+      <div>
+        <title>Refresh to return</title>
+      </div>
     </div>
   );
 }
